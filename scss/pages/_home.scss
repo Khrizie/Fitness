@@ -2,7 +2,7 @@
 @use "../base/" as *;
 
 .homeBanner {
-  padding: 4rem 0;
+  padding: 4.2rem 0;
   color: $clr--light;
   &__wrapper {
     @include gridFixed(2, 1rem);
@@ -23,7 +23,7 @@
 }
 
 .homeAbout {
-  padding: 4rem 0;
+  padding: 4.2rem 0;
   &__wrapper {
     @include gridFixed(2, 3rem);
     align-items: center;
@@ -58,7 +58,7 @@
 }
 
 .homeClass {
-  padding: 4rem 0;
+  padding: 4.2rem 0;
   &__slider {
     display: flex;
     gap: 2rem;
@@ -66,5 +66,19 @@
   .listButton {
     margin-top: 2rem;
     @include centerAll;
+  }
+}
+
+.homeTrainer {
+  padding: 4.2rem 0;
+  &__title {
+    @include between;
+    margin-bottom: 2rem;
+    h2{
+      max-width: 40rem;
+    }
+  }
+  &__cards{
+    @include gridFixed(3, 1rem)
   }
 }
